@@ -1,1 +1,4 @@
 Answer written questions here:
+1. We start from a low number so that each frame is able to render fast. It allows it the application to see the render improve progressively while being responsive. It finishes calculating every pixel before showing the next frame so starting with a low number makes the program faster. 
+2. To increase effiency of rendering for high iteration counts, dividing the pixels between multiple computers/cores/threads so they render different sections of the image at the same time. Since each pixel is independent, by delegating, it would make the rendering faster and the results can be combined into one whole image.
+3. If we sampled at the centre of 4 subpixels per pixela and averaged their colours, it would make the image smoother and reduce the rough outlines. In doing so, it would make the rendering slower because it would take 4x as many calculations.
